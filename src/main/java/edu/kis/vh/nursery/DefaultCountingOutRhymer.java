@@ -5,9 +5,15 @@ public class DefaultCountingOutRhymer {
     public static final int SIZE = 12;
     public static final int NUMBER = -1;
 
+
+    public int getTotal() {
+        return total;
+    }
+
     private final int[] numbers = new int[SIZE];
 
     public int total = NUMBER;
+
 
     public void countIn(int in) {
         if (!isFull())
